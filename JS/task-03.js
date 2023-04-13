@@ -18,8 +18,7 @@ let galleryInsert = "";
 const select = document.querySelector('.gallery');
 
 images.forEach(function (element) {
-  galleryInsert += '<li> <img src="${}" alt="${}"/></li>'
-});
+  galleryInsert += `<li> <img src="${element.url}" alt="${element.alt}" width="300" /></li>`});
 
 select.insertAdjacentHTML("beforeend", galleryInsert);
 select.insertAdjacentHTML("beforebegin", "<h2>Gallery</h2>");
