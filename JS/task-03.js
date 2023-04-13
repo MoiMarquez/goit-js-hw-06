@@ -21,6 +21,6 @@ images.forEach(function (element) {
   galleryInsert += '<li> <img src="${}" alt="${}"/></li>'
 });
 
-selector.insertAdjacentHTML("beforeend", galleryInsert);
-selector.insertAdjacentHTML("beforebegin", "<h2>Gallery</h2>");
+select.insertAdjacentHTML("beforeend", galleryInsert);
+select.insertAdjacentHTML("beforebegin", "<h2>Gallery</h2>");
 
