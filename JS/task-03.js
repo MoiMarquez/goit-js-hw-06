@@ -16,6 +16,8 @@ const images = [
 let galleryInsert = "";
 
 const select = document.querySelector('.gallery');
+select.style.display = "flex";
+select.style.gap = "10px";
 
 images.forEach(function (element) {
   galleryInsert += `<li> <img src="${element.url}" alt="${element.alt}" width="300" /></li>`});
